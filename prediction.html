@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Price Prediction</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+<form class="form">
+    <h2>Bangalore House Price Prediction</h2>
+
+    <label>Area (Square Feet)</label>
+    <input class="area" type="text" id="uiSqft" value="1000">
+
+    <label>BHK</label>
+    <div class="switch-field">
+        <input type="radio" id="bhk1" name="uiBHK" value="1">
+        <label for="bhk1">1</label>
+
+        <input type="radio" id="bhk2" name="uiBHK" value="2" checked>
+        <label for="bhk2">2</label>
+
+        <input type="radio" id="bhk3" name="uiBHK" value="3">
+        <label for="bhk3">3</label>
+
+        <input type="radio" id="bhk4" name="uiBHK" value="4">
+        <label for="bhk4">4</label>
+    </div>
+
+    <label>Bathrooms</label>
+    <div class="switch-field">
+        <input type="radio" id="bath1" name="uiBathrooms" value="1">
+        <label for="bath1">1</label>
+
+        <input type="radio" id="bath2" name="uiBathrooms" value="2" checked>
+        <label for="bath2">2</label>
+
+        <input type="radio" id="bath3" name="uiBathrooms" value="3">
+        <label for="bath3">3</label>
+
+        <input type="radio" id="bath4" name="uiBathrooms" value="4">
+        <label for="bath4">4</label>
+    </div>
+
+    <label>Location</label>
+    <select class="location" id="uiLocations">
+        <option disabled selected>Choose Location</option>
+        <option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+    </select>
+
+    <button class="submit" onclick="onClickedEstimatePrice()" type="button">
+        Estimate Price
+    </button>
+
+    <div id="uiEstimatedPrice" class="result">
+        <h2></h2>
+    </div>
+
+</form>
+
+</body>
+</html>
