@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+/* Card container */
+.form {
+  max-width: 320px;
+  background: white;
+  padding: 20px;
+  margin: 60px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+.area, .location {
+  background: #f1f1f1;
+  width: 100%;
+  border: none;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Switch buttons */
+.switch-field {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.switch-field input {
+  display: none;
+}
+
+.switch-field label {
+  flex: 1;
+  background: #e0e0e0;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background: #4CAF50;
+  color: white;
+}
+
+/* Button */
+.submit {
+  background: #4CAF50;
+  width: 100%;
+  border: none;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #43a047;
+}
+
+/* Result box */
+.result {
+  background: #eef7e6;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
